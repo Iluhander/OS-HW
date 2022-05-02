@@ -10,7 +10,7 @@
 int main(void)
 {
     int msqid;
-    char pathname[]="11-1a.c";
+    char pathname[]="task11-1a.c";
     key_t  key;
     int len, maxlen;
 
@@ -57,7 +57,7 @@ int main(void)
             exit(0);
         }
 
-        printf("message type = %ld, info = %s\n", mybuf.mtype, mybuf.info.mtext);
+        printf("message type = %ld, text = %s, int = %i\n", mybuf.mtype, mybuf.info.mtext, mybuf.info.minteger);
     }
 
     return 0;
